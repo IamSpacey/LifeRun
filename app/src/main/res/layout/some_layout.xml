@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F3FF">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/Logo_login"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="101dp" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="337dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/input_bg"
+        android:ems="10"
+        android:inputType="text"
+        android:paddingStart="20dp"
+        android:text="Логин"
+        android:textColor="#494949"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextText2"
+        tools:layout_editor_absoluteX="37dp" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="337dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/input_bg"
+        android:backgroundTint="#C3CED9"
+        android:ems="10"
+        android:inputType="text"
+        android:paddingStart="20dp"
+        android:text="Пароль"
+        android:textColor="#494949"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox"
+        tools:layout_editor_absoluteX="37dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="222dp"
+        android:layout_height="23dp"
+        android:layout_marginBottom="32dp"
+        android:text="Запомнить пароль"
+        android:textColor="#494949"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        tools:layout_editor_absoluteX="54dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="302dp"
+        android:layout_height="53dp"
+        android:autoText="false"
+        android:background="@drawable/login_btn"
+        android:backgroundTint="@android:color/transparent"
+        android:backgroundTintMode="multiply"
+        android:hapticFeedbackEnabled="false"
+        android:radius="70dp"
+        android:text="Войти"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        android:textSize="22sp"
+        app:rippleColor="#00C32D2D"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="581dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="234dp"
+        android:layout_height="23dp"
+        android:layout_marginBottom="4dp"
+        android:text="Еще не зарегистрированы?"
+        android:textAlignment="center"
+        android:textColor="#494949"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        tools:layout_editor_absoluteX="88dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="145dp"
+        android:layout_height="28dp"
+        android:text="Создать аккаунт"
+        android:textAlignment="center"
+        android:textColor="#494949"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="699dp"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
